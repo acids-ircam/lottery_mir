@@ -1,1 +1,5 @@
+title: Structured lottery for generative audio
+logo: figures/logo.png
+description: Diet deep generative audio models with structured lottery
+google_analytics:
 theme: jekyll-theme-minimal
