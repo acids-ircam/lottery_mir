@@ -1,0 +1,301 @@
+Using base prefix '/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/python/3.7.4'
+New python executable in /localscratch/esling.41281315.0/env/bin/python
+Installing setuptools, pip, wheel...
+done.
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already up-to-date: pip in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (19.1.1)
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Collecting scipy (from -r requirements.txt (line 1))
+Collecting torch_gpu (from -r requirements.txt (line 2))
+Collecting torchvision (from -r requirements.txt (line 3))
+Collecting tqdm (from -r requirements.txt (line 4))
+Collecting numpy (from -r requirements.txt (line 5))
+Collecting matplotlib (from -r requirements.txt (line 6))
+Collecting tensorflow_gpu (from -r requirements.txt (line 7))
+Collecting pandas (from -r requirements.txt (line 8))
+Collecting mpmath (from -r requirements.txt (line 9))
+Collecting networkx (from -r requirements.txt (line 10))
+Collecting natsort (from -r requirements.txt (line 11))
+Collecting joblib (from -r requirements.txt (line 12))
+Collecting scikit_learn (from -r requirements.txt (line 13))
+Collecting cffi (from -r requirements.txt (line 14))
+Collecting pycparser (from -r requirements.txt (line 15))
+Collecting audioread (from -r requirements.txt (line 16))
+Collecting decorator (from -r requirements.txt (line 17))
+Collecting six (from -r requirements.txt (line 18))
+Collecting llvmlite (from -r requirements.txt (line 19))
+Collecting numba (from -r requirements.txt (line 20))
+Collecting imageio (from -r requirements.txt (line 21))
+Collecting torch (from torchvision->-r requirements.txt (line 3))
+Collecting pillow-simd>=4.1.1 (from torchvision->-r requirements.txt (line 3))
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib->-r requirements.txt (line 6))
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 6))
+Collecting kiwisolver>=1.0.1 (from matplotlib->-r requirements.txt (line 6))
+Collecting python-dateutil>=2.1 (from matplotlib->-r requirements.txt (line 6))
+Collecting google-pasta>=0.1.6 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting keras-applications>=1.0.8 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting tensorflow-estimator<2.2.0,>=2.1.0rc0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting keras-preprocessing>=1.1.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting opt-einsum>=2.3.2 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting termcolor>=1.1.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Requirement already satisfied: wheel>=0.26; python_version >= "3" in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from tensorflow_gpu->-r requirements.txt (line 7)) (0.33.4)
+Collecting astor>=0.6.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting wrapt>=1.11.1 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting grpcio>=1.8.6 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting absl-py>=0.7.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting gast==0.2.2 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting tensorboard<2.2.0,>=2.1.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting protobuf>=3.8.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting pytz>=2017.2 (from pandas->-r requirements.txt (line 8))
+Requirement already satisfied: setuptools in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from numba->-r requirements.txt (line 20)) (41.0.1)
+Collecting pillow (from imageio->-r requirements.txt (line 21))
+Collecting future (from torch->torchvision->-r requirements.txt (line 3))
+Collecting h5py (from keras-applications>=1.0.8->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting google-auth<2,>=1.6.3 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting werkzeug>=0.11.15 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting requests<3,>=2.21.0 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting google-auth-oauthlib<0.5,>=0.4.1 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting markdown>=2.6.8 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting pyasn1-modules>=0.2.1 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting cachetools<5.0,>=2.0.0 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting rsa<4.1,>=3.1.4 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting idna<3,>=2.5 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting chardet<4,>=3.0.2 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting pyasn1<0.5.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Installing collected packages: numpy, scipy, torch-gpu, future, torch, six, pillow-simd, torchvision, tqdm, pyparsing, cycler, kiwisolver, python-dateutil, matplotlib, google-pasta, h5py, keras-applications, tensorflow-estimator, keras-preprocessing, opt-einsum, termcolor, astor, wrapt, grpcio, absl-py, gast, pyasn1, pyasn1-modules, cachetools, rsa, google-auth, werkzeug, idna, chardet, urllib3, certifi, requests, oauthlib, requests-oauthlib, google-auth-oauthlib, protobuf, markdown, tensorboard, tensorflow-gpu, pytz, pandas, mpmath, decorator, networkx, natsort, joblib, scikit-learn, pycparser, cffi, audioread, llvmlite, numba, pillow, imageio
+Successfully installed absl-py-0.7.1 astor-0.8.1 audioread-2.1.6 cachetools-3.1.1 certifi-2020.4.5.1 cffi-1.13.2 chardet-3.0.4 cycler-0.10.0 decorator-4.4.2 future-0.17.1 gast-0.2.2 google-auth-1.11.0 google-auth-oauthlib-0.4.1 google-pasta-0.1.8 grpcio-1.25.0 h5py-2.10.0 idna-2.9 imageio-2.8.0 joblib-0.14.1 keras-applications-1.0.8 keras-preprocessing-1.1.0 kiwisolver-1.1.0 llvmlite-0.31.0 markdown-3.2 matplotlib-3.2.1 mpmath-1.1.0 natsort-5.3.3 networkx-2.4 numba-0.48.0 numpy-1.18.1 oauthlib-3.1.0 opt-einsum-2.3.2 pandas-1.0.3 pillow-7.0.0 pillow-simd-7.0.0.post3 protobuf-3.11.3 pyasn1-0.4.8 pyasn1-modules-0.2.8 pycparser-2.20 pyparsing-2.4.7 python-dateutil-2.8.1 pytz-2019.3 requests-2.23.0 requests-oauthlib-1.3.0 rsa-4.0 scikit-learn-0.22.1 scipy-1.4.1 six-1.14.0 tensorboard-2.1.0 tensorflow-estimator-2.1.0 tensorflow-gpu-2.1.0 termcolor-1.1.0 torch-1.5.0 torch-gpu-1.0.0 torchvision-0.5.0 tqdm-4.40.2 urllib3-1.25.8 werkzeug-1.0.1 wrapt-1.11.2
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/nnAudio-0.1.0-py3-none-any.whl
+Installing collected packages: nnAudio
+Successfully installed nnAudio-0.1.0
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/SoundFile-0.10.3.post1-py2.py3-none-any.whl
+Requirement already satisfied: cffi>=1.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from SoundFile==0.10.3.post1) (1.13.2)
+Requirement already satisfied: pycparser in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from cffi>=1.0->SoundFile==0.10.3.post1) (2.20)
+Installing collected packages: SoundFile
+Successfully installed SoundFile-0.10.3.post1
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/resampy-0.2.2.tar.gz
+Requirement already satisfied: numpy>=1.10 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (1.18.1)
+Requirement already satisfied: scipy>=0.13 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (1.4.1)
+Requirement already satisfied: numba>=0.32 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (0.48.0)
+Requirement already satisfied: six>=1.3 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (1.14.0)
+Requirement already satisfied: llvmlite<0.32.0,>=0.31.0dev0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from numba>=0.32->resampy==0.2.2) (0.31.0)
+Requirement already satisfied: setuptools in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from numba>=0.32->resampy==0.2.2) (41.0.1)
+Building wheels for collected packages: resampy
+  Building wheel for resampy (setup.py): started
+  Building wheel for resampy (setup.py): finished with status 'done'
+  Stored in directory: /home/esling/.cache/pip/wheels/7f/a4/f3/4443d9c0e651405d78bca2bc790f21cb3914c168761d6ce287
+Successfully built resampy
+Installing collected packages: resampy
+Successfully installed resampy-0.2.2
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/librosa-0.7.2.tar.gz
+Requirement already satisfied: audioread>=2.0.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (2.1.6)
+Requirement already satisfied: numpy>=1.15.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (1.18.1)
+Requirement already satisfied: scipy>=1.0.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (1.4.1)
+Requirement already satisfied: scikit-learn!=0.19.0,>=0.14.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.22.1)
+Requirement already satisfied: joblib>=0.12 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.14.1)
+Requirement already satisfied: decorator>=3.0.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (4.4.2)
+Requirement already satisfied: six>=1.3 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (1.14.0)
+Requirement already satisfied: resampy>=0.2.2 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.2.2)
+Requirement already satisfied: numba>=0.43.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.48.0)
+Requirement already satisfied: soundfile>=0.9.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.10.3.post1)
+Requirement already satisfied: setuptools in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from numba>=0.43.0->librosa==0.7.2) (41.0.1)
+Requirement already satisfied: llvmlite<0.32.0,>=0.31.0dev0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from numba>=0.43.0->librosa==0.7.2) (0.31.0)
+Requirement already satisfied: cffi>=1.0 in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from soundfile>=0.9.0->librosa==0.7.2) (1.13.2)
+Requirement already satisfied: pycparser in /localscratch/esling.41281315.0/env/lib/python3.7/site-packages (from cffi>=1.0->soundfile>=0.9.0->librosa==0.7.2) (2.20)
+Building wheels for collected packages: librosa
+  Building wheel for librosa (setup.py): started
+  Building wheel for librosa (setup.py): finished with status 'done'
+  Stored in directory: /home/esling/.cache/pip/wheels/5d/2c/70/9fd1f14d034354cd1109b858bb14d27d56a04a887581ff018b
+Successfully built librosa
+Installing collected packages: librosa
+Successfully installed librosa-0.7.2
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/lmdb-0.98.tar.gz
+Building wheels for collected packages: lmdb
+  Building wheel for lmdb (setup.py): started
+  Building wheel for lmdb (setup.py): finished with status 'done'
+  Stored in directory: /home/esling/.cache/pip/wheels/46/8c/ac/27ff74457451e040aa411ff52d641111b0a2481c9f8d31ca95
+Successfully built lmdb
+Installing collected packages: lmdb
+Successfully installed lmdb-0.98
+2020-04-29 02:24:46.193983: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2020-04-29 02:24:46.514683: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.6
+*******
+Run info.
+Optimization will be on cuda.
+Model is sol-ordinario_ddsp_cnn_xavier_trimming_information_reinit_global_0.
+*******
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+/localscratch/esling.41281315.0/env/lib/python3.7/site-packages/torch/nn/functional.py:2973: UserWarning: Default upsampling behavior when mode=linear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+[Untrained loss : 106.4034]
+[Starting training]
+Epoch 0 	 90.842087 	 86.698715 	 89.330193
+Epoch 10 	 80.848930 	 76.278633 	 81.060455
+Epoch 20 	 75.964432 	 76.214264 	 81.476601
+Epoch 30 	 73.446350 	 75.236832 	 76.447296
+Epoch 40 	 65.053474 	 69.222359 	 70.569756
+Epoch 50 	 64.123573 	 63.421070 	 67.083519
+Epoch 60 	 54.763157 	 54.458817 	 58.801605
+Epoch 70 	 49.927219 	 48.440109 	 51.109360
+Epoch 80 	 45.042385 	 43.831432 	 46.228832
+Epoch 90 	 41.035446 	 40.145035 	 42.245247
+Epoch 100 	 38.720600 	 38.194286 	 41.381279
+Epoch 110 	 39.265194 	 37.400646 	 39.625011
+Epoch 120 	 32.959904 	 35.417175 	 37.544456
+Epoch 130 	 32.103600 	 32.429638 	 34.920078
+Epoch 140 	 31.480843 	 33.361549 	 34.591885
+Epoch 150 	 29.654194 	 32.347294 	 33.221588
+Epoch 160 	 29.146322 	 31.871712 	 33.133846
+Epoch 170 	 28.581137 	 31.523321 	 32.736389
+Epoch 180 	 28.439840 	 30.444857 	 32.168308
+Epoch 190 	 28.266665 	 31.796629 	 31.938934
+Train loss       : 27.985723
+Best valid loss  : 30.444857
+Best test loss   : 32.168308
+Pruning          : 1.00
+[Performing one full cumulative epoch]
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 2,390,813
+--------------------------------
+Total memory      : 40.76 MB
+Total Flops       : 598.94 MFlops
+Total Mem (Read)  : 35.25 MB
+Total Mem (Write) : 26.88 MB
+[Supermasks testing]
+[Untrained loss : 96.5429]
+[Starting training]
+Epoch 0 	 94.418533 	 84.241516 	 86.938759
+Epoch 10 	 68.698036 	 65.584717 	 68.272507
+Epoch 20 	 57.135910 	 47.533520 	 51.982067
+Epoch 30 	 51.217735 	 44.185360 	 48.742706
+Epoch 40 	 42.230808 	 41.520966 	 45.354164
+Epoch 50 	 38.407093 	 39.011169 	 41.562843
+Epoch 60 	 35.894127 	 36.230782 	 38.745335
+Epoch 70 	 33.819633 	 35.744671 	 38.593746
+Epoch 80 	 32.576229 	 33.854046 	 36.100750
+Epoch 90 	 30.693996 	 32.863239 	 34.924255
+Epoch 100 	 30.729877 	 31.456320 	 34.373852
+Epoch 110 	 30.674103 	 31.715984 	 34.457531
+Epoch 120 	 28.069202 	 30.814768 	 32.592377
+Epoch 130 	 28.191870 	 29.789579 	 32.124168
+Epoch 140 	 27.187658 	 30.328999 	 32.642235
+Epoch 150 	 25.174843 	 28.629076 	 30.375050
+Epoch 160 	 24.690777 	 28.056110 	 29.869125
+Epoch 170 	 23.687281 	 28.104048 	 29.374237
+Epoch 180 	 23.351500 	 27.266268 	 29.073954
+Epoch 190 	 23.237957 	 26.816757 	 28.747923
+Train loss       : 22.862724
+Best valid loss  : 26.744465
+Best test loss   : 28.921814
+Pruning          : 0.72
+[Performing one full cumulative epoch]
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 1,409,914
+--------------------------------
+Total memory      : 39.18 MB
+Total Flops       : 586.28 MFlops
+Total Mem (Read)  : 30.37 MB
+Total Mem (Write) : 24.34 MB
+[Supermasks testing]
+[Untrained loss : 95.4950]
+[Starting training]
+Epoch 0 	 88.121681 	 83.132851 	 86.312828
+Epoch 10 	 62.787643 	 59.924492 	 63.992065
+Epoch 20 	 53.403000 	 48.417732 	 51.751736
+Epoch 30 	 46.486801 	 38.703812 	 42.507324
+Epoch 40 	 45.217758 	 41.890549 	 45.742065
+Epoch 50 	 34.971287 	 34.568409 	 37.326141
+Epoch 60 	 34.163712 	 33.456310 	 36.112103
+Epoch 70 	 33.271297 	 34.149052 	 36.689770
+Epoch 80 	 30.084412 	 31.194530 	 33.273979
+Epoch 90 	 29.339359 	 29.767704 	 32.505474
+Epoch 100 	 28.117926 	 30.813927 	 32.942383
+Epoch 110 	 27.779913 	 28.502872 	 31.705755
+Epoch 120 	 27.482979 	 28.500532 	 31.382389
+Epoch 130 	 26.834469 	 28.539082 	 31.267542
+Epoch 140 	 25.791992 	 27.493038 	 30.287170
+Epoch 150 	 25.674530 	 27.666355 	 30.228437
+Epoch 160 	 25.486937 	 27.243101 	 29.990498
+Epoch 170 	 24.973661 	 26.922729 	 29.350723
+Epoch 180 	 24.484718 	 26.374258 	 29.239918
+Epoch 190 	 24.208565 	 26.594202 	 29.015158
+Train loss       : 23.822491
+Best valid loss  : 26.123074
+Best test loss   : 28.666794
+Pruning          : 0.52
+[Performing one full cumulative epoch]
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 1,003,289
+--------------------------------
+Total memory      : 37.24 MB
+Total Flops       : 549.6 MFlops
+Total Mem (Read)  : 27.33 MB
+Total Mem (Write) : 22.77 MB
+[Supermasks testing]
+[Untrained loss : 94.8089]
+[Starting training]
+Epoch 0 	 89.595390 	 83.952019 	 86.978661
+Epoch 10 	 64.397987 	 59.357445 	 65.252556
+Epoch 20 	 58.079605 	 51.145416 	 55.207283
+Epoch 30 	 61.863850 	 57.112286 	 62.240917
+Epoch 40 	 49.806484 	 49.245148 	 53.240345
+Epoch 50 	 46.151775 	 48.547314 	 51.348278
+Epoch 60 	 41.722397 	 41.792519 	 45.244022
+Epoch 70 	 41.614517 	 43.335621 	 46.681511
+Epoch 80 	 41.180523 	 41.969772 	 45.816982
+Epoch 90 	 37.766685 	 40.016998 	 44.846737
+Epoch 100 	 37.174946 	 39.647282 	 43.800537
+Epoch 110 	 36.589157 	 38.348530 	 42.552006
+Epoch 120 	 35.831810 	 39.354210 	 42.809162
+Epoch 130 	 34.115482 	 37.748039 	 41.525589
+Epoch 140 	 33.464371 	 37.211128 	 41.829880
+Epoch 150 	 32.965916 	 37.265457 	 40.811802
+Epoch 160 	 32.461197 	 37.467331 	 40.913269
+Epoch 170 	 32.111748 	 37.276428 	 40.537903
+Epoch 180 	 31.950270 	 36.862984 	 40.006939
+[Model stopped early]
+Train loss       : 31.607046
+Best valid loss  : 36.283016
+Best test loss   : 40.543518
+Pruning          : 0.37
+[Performing one full cumulative epoch]
+Traceback (most recent call last):
+  File "main.py", line 261, in <module>
+    model = pruning.reset(model)
+  File "/scratch/esling/lottery/pruning.py", line 781, in reset
+    replace_recurrent(m, l, m.unprune_idx[l], prev_kept)
+  File "/scratch/esling/lottery/pruning.py", line 752, in replace_recurrent
+    cur_ih = nn.Parameter(cur_ih[rep_id0])#torch.from_numpy(cur_ih[rep_id0]).to(self.args.device))
+IndexError: too many indices for tensor of dimension 2

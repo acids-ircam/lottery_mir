@@ -1,0 +1,624 @@
+Using base prefix '/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/python/3.7.4'
+New python executable in /localscratch/esling.40977521.0/env/bin/python
+Installing setuptools, pip, wheel...
+done.
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already up-to-date: pip in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (19.1.1)
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Collecting scipy (from -r requirements.txt (line 1))
+Collecting torch_gpu (from -r requirements.txt (line 2))
+Collecting torchvision (from -r requirements.txt (line 3))
+Collecting tqdm (from -r requirements.txt (line 4))
+Collecting numpy (from -r requirements.txt (line 5))
+Collecting matplotlib (from -r requirements.txt (line 6))
+Collecting tensorflow_gpu (from -r requirements.txt (line 7))
+Collecting pandas (from -r requirements.txt (line 8))
+Collecting mpmath (from -r requirements.txt (line 9))
+Collecting networkx (from -r requirements.txt (line 10))
+Collecting natsort (from -r requirements.txt (line 11))
+Collecting joblib (from -r requirements.txt (line 12))
+Collecting scikit_learn (from -r requirements.txt (line 13))
+Collecting cffi (from -r requirements.txt (line 14))
+Collecting pycparser (from -r requirements.txt (line 15))
+Collecting audioread (from -r requirements.txt (line 16))
+Collecting decorator (from -r requirements.txt (line 17))
+Collecting six (from -r requirements.txt (line 18))
+Collecting llvmlite (from -r requirements.txt (line 19))
+Collecting numba (from -r requirements.txt (line 20))
+Collecting imageio (from -r requirements.txt (line 21))
+Collecting torch (from torchvision->-r requirements.txt (line 3))
+Collecting pillow-simd>=4.1.1 (from torchvision->-r requirements.txt (line 3))
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 6))
+Collecting kiwisolver>=1.0.1 (from matplotlib->-r requirements.txt (line 6))
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib->-r requirements.txt (line 6))
+Collecting python-dateutil>=2.1 (from matplotlib->-r requirements.txt (line 6))
+Collecting gast==0.2.2 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting keras-applications>=1.0.8 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting opt-einsum>=2.3.2 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting google-pasta>=0.1.6 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting wrapt>=1.11.1 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting tensorboard<2.2.0,>=2.1.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting absl-py>=0.7.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting termcolor>=1.1.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting grpcio>=1.8.6 (from tensorflow_gpu->-r requirements.txt (line 7))
+Requirement already satisfied: wheel>=0.26; python_version >= "3" in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from tensorflow_gpu->-r requirements.txt (line 7)) (0.33.4)
+Collecting protobuf>=3.8.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting keras-preprocessing>=1.1.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting astor>=0.6.0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting tensorflow-estimator<2.2.0,>=2.1.0rc0 (from tensorflow_gpu->-r requirements.txt (line 7))
+Collecting pytz>=2017.2 (from pandas->-r requirements.txt (line 8))
+Requirement already satisfied: setuptools in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from numba->-r requirements.txt (line 20)) (41.0.1)
+Collecting pillow (from imageio->-r requirements.txt (line 21))
+Collecting future (from torch->torchvision->-r requirements.txt (line 3))
+Collecting h5py (from keras-applications>=1.0.8->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting markdown>=2.6.8 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting google-auth-oauthlib<0.5,>=0.4.1 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting werkzeug>=0.11.15 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting requests<3,>=2.21.0 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting google-auth<2,>=1.6.3 (from tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting idna<3,>=2.5 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting chardet<4,>=3.0.2 (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting rsa<4.1,>=3.1.4 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting pyasn1-modules>=0.2.1 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting cachetools<5.0,>=2.0.0 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Collecting pyasn1>=0.1.3 (from rsa<4.1,>=3.1.4->google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow_gpu->-r requirements.txt (line 7))
+Installing collected packages: numpy, scipy, torch-gpu, future, torch, six, pillow-simd, torchvision, tqdm, cycler, kiwisolver, pyparsing, python-dateutil, matplotlib, gast, h5py, keras-applications, opt-einsum, google-pasta, wrapt, markdown, certifi, idna, urllib3, chardet, requests, oauthlib, requests-oauthlib, pyasn1, rsa, pyasn1-modules, cachetools, google-auth, google-auth-oauthlib, werkzeug, absl-py, protobuf, grpcio, tensorboard, termcolor, keras-preprocessing, astor, tensorflow-estimator, tensorflow-gpu, pytz, pandas, mpmath, decorator, networkx, natsort, joblib, scikit-learn, pycparser, cffi, audioread, llvmlite, numba, pillow, imageio
+Successfully installed absl-py-0.7.1 astor-0.8.1 audioread-2.1.6 cachetools-3.1.1 certifi-2020.4.5.1 cffi-1.13.2 chardet-3.0.4 cycler-0.10.0 decorator-4.4.2 future-0.17.1 gast-0.2.2 google-auth-1.11.0 google-auth-oauthlib-0.4.1 google-pasta-0.1.8 grpcio-1.25.0 h5py-2.10.0 idna-2.9 imageio-2.8.0 joblib-0.14.1 keras-applications-1.0.8 keras-preprocessing-1.1.0 kiwisolver-1.1.0 llvmlite-0.31.0 markdown-3.2 matplotlib-3.2.1 mpmath-1.1.0 natsort-5.3.3 networkx-2.4 numba-0.48.0 numpy-1.18.1 oauthlib-3.1.0 opt-einsum-2.3.2 pandas-1.0.3 pillow-7.0.0 pillow-simd-7.0.0.post3 protobuf-3.11.3 pyasn1-0.4.8 pyasn1-modules-0.2.8 pycparser-2.20 pyparsing-2.4.7 python-dateutil-2.8.1 pytz-2019.3 requests-2.23.0 requests-oauthlib-1.3.0 rsa-4.0 scikit-learn-0.22.1 scipy-1.4.1 six-1.14.0 tensorboard-2.1.0 tensorflow-estimator-2.1.0 tensorflow-gpu-2.1.0 termcolor-1.1.0 torch-1.5.0 torch-gpu-1.0.0 torchvision-0.5.0 tqdm-4.40.2 urllib3-1.25.8 werkzeug-1.0.1 wrapt-1.11.2
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/nnAudio-0.1.0-py3-none-any.whl
+Installing collected packages: nnAudio
+Successfully installed nnAudio-0.1.0
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/SoundFile-0.10.3.post1-py2.py3-none-any.whl
+Requirement already satisfied: cffi>=1.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from SoundFile==0.10.3.post1) (1.13.2)
+Requirement already satisfied: pycparser in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from cffi>=1.0->SoundFile==0.10.3.post1) (2.20)
+Installing collected packages: SoundFile
+Successfully installed SoundFile-0.10.3.post1
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/resampy-0.2.2.tar.gz
+Requirement already satisfied: numpy>=1.10 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (1.18.1)
+Requirement already satisfied: scipy>=0.13 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (1.4.1)
+Requirement already satisfied: numba>=0.32 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (0.48.0)
+Requirement already satisfied: six>=1.3 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from resampy==0.2.2) (1.14.0)
+Requirement already satisfied: llvmlite<0.32.0,>=0.31.0dev0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from numba>=0.32->resampy==0.2.2) (0.31.0)
+Requirement already satisfied: setuptools in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from numba>=0.32->resampy==0.2.2) (41.0.1)
+Building wheels for collected packages: resampy
+  Building wheel for resampy (setup.py): started
+  Building wheel for resampy (setup.py): finished with status 'done'
+  Stored in directory: /home/esling/.cache/pip/wheels/7f/a4/f3/4443d9c0e651405d78bca2bc790f21cb3914c168761d6ce287
+Successfully built resampy
+Installing collected packages: resampy
+Successfully installed resampy-0.2.2
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/librosa-0.7.2.tar.gz
+Requirement already satisfied: audioread>=2.0.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (2.1.6)
+Requirement already satisfied: numpy>=1.15.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (1.18.1)
+Requirement already satisfied: scipy>=1.0.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (1.4.1)
+Requirement already satisfied: scikit-learn!=0.19.0,>=0.14.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.22.1)
+Requirement already satisfied: joblib>=0.12 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.14.1)
+Requirement already satisfied: decorator>=3.0.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (4.4.2)
+Requirement already satisfied: six>=1.3 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (1.14.0)
+Requirement already satisfied: resampy>=0.2.2 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.2.2)
+Requirement already satisfied: numba>=0.43.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.48.0)
+Requirement already satisfied: soundfile>=0.9.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from librosa==0.7.2) (0.10.3.post1)
+Requirement already satisfied: setuptools in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from numba>=0.43.0->librosa==0.7.2) (41.0.1)
+Requirement already satisfied: llvmlite<0.32.0,>=0.31.0dev0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from numba>=0.43.0->librosa==0.7.2) (0.31.0)
+Requirement already satisfied: cffi>=1.0 in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from soundfile>=0.9.0->librosa==0.7.2) (1.13.2)
+Requirement already satisfied: pycparser in /localscratch/esling.40977521.0/env/lib/python3.7/site-packages (from cffi>=1.0->soundfile>=0.9.0->librosa==0.7.2) (2.20)
+Building wheels for collected packages: librosa
+  Building wheel for librosa (setup.py): started
+  Building wheel for librosa (setup.py): finished with status 'done'
+  Stored in directory: /home/esling/.cache/pip/wheels/5d/2c/70/9fd1f14d034354cd1109b858bb14d27d56a04a887581ff018b
+Successfully built librosa
+Installing collected packages: librosa
+Successfully installed librosa-0.7.2
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /home/esling/scratch/python_libs/lmdb-0.98.tar.gz
+Building wheels for collected packages: lmdb
+  Building wheel for lmdb (setup.py): started
+  Building wheel for lmdb (setup.py): finished with status 'done'
+  Stored in directory: /home/esling/.cache/pip/wheels/46/8c/ac/27ff74457451e040aa411ff52d641111b0a2481c9f8d31ca95
+Successfully built lmdb
+Installing collected packages: lmdb
+Successfully installed lmdb-0.98
+2020-04-24 12:14:58.784104: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2020-04-24 12:14:58.794401: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.6
+*******
+Run info.
+Optimization will be on cuda.
+Model is nsynth-10000_ddsp_cnn_xavier_masking_magnitude_rewind_local_0.
+*******
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+/localscratch/esling.40977521.0/env/lib/python3.7/site-packages/torch/nn/functional.py:2973: UserWarning: Default upsampling behavior when mode=linear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+[Untrained loss : 139.6115]
+[Starting training]
+Epoch 0 	 91.717857 	 69.841019 	 72.090370
+Epoch 10 	 63.453030 	 60.416088 	 60.473698
+Epoch 20 	 53.732094 	 49.035351 	 49.796978
+Epoch 30 	 48.092751 	 41.947956 	 44.210175
+Epoch 40 	 45.117756 	 39.952026 	 41.813782
+Epoch 50 	 42.524189 	 37.531151 	 39.467224
+Epoch 60 	 40.311413 	 35.262466 	 37.445518
+Epoch 70 	 38.656059 	 35.638222 	 37.373665
+Epoch 80 	 36.808178 	 32.587803 	 34.639664
+Epoch 90 	 34.085945 	 32.150345 	 33.986042
+Epoch 100 	 33.071564 	 29.753872 	 31.691755
+Epoch 110 	 30.394535 	 29.139093 	 31.000971
+Epoch 120 	 29.070030 	 27.996899 	 30.191658
+Epoch 130 	 28.386150 	 27.918152 	 29.484085
+Epoch 140 	 27.332127 	 27.067448 	 28.826815
+Epoch 150 	 26.746639 	 26.437717 	 28.217916
+Epoch 160 	 26.120544 	 26.816681 	 28.504856
+Epoch 170 	 24.955000 	 25.510098 	 27.121710
+Epoch 180 	 24.598854 	 25.261354 	 27.073030
+Epoch 190 	 24.306898 	 25.444296 	 27.134228
+Train loss       : 24.172747
+Best valid loss  : 24.993805
+Best test loss   : 26.812227
+Pruning          : 1.00
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : 1274.8809]
+[Starting training]
+Epoch 0 	 42.333984 	 33.808624 	 36.078430
+Epoch 10 	 29.845951 	 28.874212 	 30.713556
+Epoch 20 	 28.534512 	 28.122839 	 29.801954
+Epoch 30 	 30.246216 	 27.873615 	 29.647762
+Epoch 40 	 27.074986 	 26.618212 	 28.280581
+Epoch 50 	 26.495171 	 27.651512 	 29.226772
+Epoch 60 	 26.078775 	 25.960121 	 27.816347
+Epoch 70 	 25.689857 	 25.641073 	 27.310658
+Epoch 80 	 25.187384 	 25.248976 	 26.863827
+Epoch 90 	 23.787796 	 24.266928 	 26.149990
+Epoch 100 	 23.705482 	 24.365904 	 26.036890
+Epoch 110 	 23.132647 	 24.164028 	 25.776457
+Epoch 120 	 22.864010 	 24.326273 	 25.831406
+Epoch 130 	 22.505894 	 23.995148 	 25.557335
+Epoch 140 	 22.418745 	 23.946609 	 25.583664
+Epoch 150 	 22.298565 	 23.978231 	 25.513979
+Epoch 160 	 22.278404 	 23.865364 	 25.499453
+Epoch 170 	 22.194715 	 23.616802 	 25.512083
+Epoch 180 	 22.230888 	 23.882349 	 25.445333
+Epoch 190 	 22.145075 	 23.764057 	 25.445797
+Train loss       : 22.094709
+Best valid loss  : 23.487221
+Best test loss   : 25.446566
+Pruning          : 0.70
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : 68.2894]
+[Starting training]
+Epoch 0 	 40.687160 	 31.825218 	 33.635220
+Epoch 10 	 29.790119 	 29.726133 	 31.653219
+Epoch 20 	 27.829964 	 27.149733 	 28.814087
+Epoch 30 	 26.933834 	 26.162537 	 27.994501
+Epoch 40 	 29.002911 	 28.658817 	 30.149469
+Epoch 50 	 26.709826 	 26.553568 	 28.342274
+Epoch 60 	 25.946266 	 25.909691 	 27.761360
+Epoch 70 	 25.553514 	 25.749784 	 27.749760
+Epoch 80 	 24.949232 	 25.547079 	 27.215000
+Epoch 90 	 24.874529 	 25.357958 	 27.052748
+Epoch 100 	 24.615667 	 25.772032 	 27.375755
+Epoch 110 	 24.280153 	 25.073738 	 26.846138
+Epoch 120 	 23.983335 	 24.898642 	 26.584564
+Epoch 130 	 23.843540 	 24.723055 	 26.406637
+Epoch 140 	 23.660429 	 24.759106 	 26.380583
+Epoch 150 	 23.461733 	 24.696362 	 26.368019
+Epoch 160 	 23.243353 	 24.450060 	 26.063728
+Epoch 170 	 22.925541 	 24.332462 	 25.914091
+Epoch 180 	 22.672405 	 24.158655 	 25.858934
+[Model stopped early]
+Train loss       : 22.694525
+Best valid loss  : 24.049438
+Best test loss   : 26.248005
+Pruning          : 0.49
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : 70.1651]
+[Starting training]
+Epoch 0 	 39.283066 	 31.172554 	 33.109089
+Epoch 10 	 28.763062 	 27.615818 	 29.504467
+Epoch 20 	 27.263550 	 26.710072 	 28.626814
+Epoch 30 	 26.272709 	 26.227364 	 28.110878
+Epoch 40 	 26.106995 	 27.352650 	 28.934376
+Epoch 50 	 26.179123 	 27.537033 	 29.012665
+Epoch 60 	 25.424126 	 26.829191 	 28.395288
+[Model stopped early]
+Train loss       : 25.377831
+Best valid loss  : 25.582754
+Best test loss   : 27.326836
+Pruning          : 0.34
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : 74.6727]
+[Starting training]
+Epoch 0 	 39.063305 	 31.099714 	 33.152504
+Epoch 10 	 28.097410 	 27.268505 	 29.129091
+Epoch 20 	 27.261694 	 26.972235 	 28.495029
+Epoch 30 	 26.250368 	 26.132973 	 27.700590
+Epoch 40 	 25.492771 	 25.791300 	 27.502516
+Epoch 50 	 25.210140 	 25.105814 	 27.119839
+Epoch 60 	 24.963560 	 25.145395 	 26.835369
+Epoch 70 	 24.568041 	 25.056866 	 26.600101
+Epoch 80 	 24.515162 	 24.796827 	 26.362679
+Epoch 90 	 24.068628 	 24.723923 	 26.435429
+Epoch 100 	 24.091476 	 24.581446 	 26.195408
+Epoch 110 	 22.997107 	 23.801115 	 25.453749
+Epoch 120 	 24.061743 	 24.542461 	 26.068085
+Epoch 130 	 23.362310 	 24.215836 	 25.802927
+Epoch 140 	 23.127031 	 24.058935 	 25.662127
+[Model stopped early]
+Train loss       : 23.161787
+Best valid loss  : 23.783728
+Best test loss   : 25.391092
+Pruning          : 0.24
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : 75.4633]
+[Starting training]
+Epoch 0 	 40.342754 	 32.933533 	 35.064632
+Epoch 10 	 27.623135 	 26.826445 	 28.554110
+Epoch 20 	 30.588737 	 31.020441 	 32.824600
+Epoch 30 	 27.684227 	 26.623005 	 28.413841
+Epoch 40 	 26.578360 	 26.579321 	 28.282625
+Epoch 50 	 26.327547 	 25.835300 	 27.856865
+Epoch 60 	 25.903524 	 25.989513 	 27.871044
+Epoch 70 	 25.735672 	 25.740976 	 27.591887
+Epoch 80 	 25.630703 	 25.980936 	 27.645567
+Epoch 90 	 25.577410 	 25.529198 	 27.449121
+Epoch 100 	 25.526009 	 25.698999 	 27.461969
+Epoch 110 	 25.389912 	 25.568521 	 27.451971
+Epoch 120 	 25.320932 	 25.517700 	 27.449120
+Epoch 130 	 25.255871 	 25.738232 	 27.457008
+[Model stopped early]
+Train loss       : 25.314400
+Best valid loss  : 25.463236
+Best test loss   : 27.439812
+Pruning          : 0.17
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 40.847534 	 51.840611 	 53.953083
+Epoch 10 	 27.865601 	 26.522148 	 28.372078
+Epoch 20 	 29.675659 	 29.344461 	 31.623562
+Epoch 30 	 27.755758 	 28.259611 	 30.138229
+Epoch 40 	 26.935694 	 27.252098 	 29.251114
+[Model stopped early]
+Train loss       : 26.753428
+Best valid loss  : 26.288923
+Best test loss   : 28.265533
+Pruning          : 0.12
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 42.030197 	 51.924217 	 53.839600
+Epoch 10 	 27.892923 	 26.888245 	 28.751074
+Epoch 20 	 26.842770 	 26.440964 	 28.084076
+Epoch 30 	 26.017681 	 25.517357 	 27.472160
+Epoch 40 	 25.735243 	 25.345129 	 27.049129
+Epoch 50 	 25.294006 	 25.532646 	 27.374178
+Epoch 60 	 24.948830 	 24.809380 	 26.710194
+Epoch 70 	 30.905527 	 29.496443 	 31.019533
+Epoch 80 	 27.515434 	 26.657938 	 28.268925
+Epoch 90 	 26.781862 	 25.969957 	 27.630524
+[Model stopped early]
+Train loss       : 26.475222
+Best valid loss  : 24.672077
+Best test loss   : 26.633871
+Pruning          : 0.08
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 41.300560 	 72.078278 	 73.996048
+Epoch 10 	 27.435417 	 26.261593 	 28.382980
+Epoch 20 	 26.079281 	 25.632902 	 27.469120
+Epoch 30 	 25.795776 	 25.646172 	 27.374308
+Epoch 40 	 25.234322 	 25.338596 	 26.930166
+Epoch 50 	 24.336720 	 24.586233 	 26.319277
+Epoch 60 	 24.179375 	 24.458891 	 26.356022
+Epoch 70 	 23.622488 	 24.313515 	 26.090797
+Epoch 80 	 23.563192 	 24.359520 	 26.005146
+Epoch 90 	 23.361298 	 24.202547 	 25.885967
+Epoch 100 	 23.302486 	 24.046520 	 25.737076
+Epoch 110 	 23.240282 	 23.991644 	 25.768740
+Epoch 120 	 23.145773 	 23.918726 	 25.689745
+[Model stopped early]
+Train loss       : 23.118614
+Best valid loss  : 23.872410
+Best test loss   : 25.777414
+Pruning          : 0.06
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 41.599293 	 nan 	 nan
+Epoch 10 	 27.872343 	 27.156424 	 28.904776
+Epoch 20 	 26.706444 	 25.885265 	 27.641287
+Epoch 30 	 25.901506 	 25.607296 	 27.565794
+Epoch 40 	 25.325882 	 25.258303 	 26.900391
+Epoch 50 	 25.199606 	 25.570704 	 28.768484
+Epoch 60 	 24.167643 	 24.226810 	 26.259111
+Epoch 70 	 24.141371 	 24.056570 	 26.217949
+Epoch 80 	 23.904724 	 24.405863 	 26.146793
+Epoch 90 	 23.547686 	 24.160339 	 25.904373
+Epoch 100 	 23.561201 	 24.193663 	 25.964287
+Epoch 110 	 23.346727 	 24.052357 	 25.871275
+Epoch 120 	 23.227610 	 23.832565 	 25.786318
+Epoch 130 	 23.228344 	 24.141151 	 25.817495
+Epoch 140 	 23.116465 	 24.024832 	 25.806253
+Epoch 150 	 23.150024 	 24.021845 	 25.793434
+Epoch 160 	 23.137794 	 24.102583 	 25.806767
+[Model stopped early]
+Train loss       : 23.148806
+Best valid loss  : 23.574558
+Best test loss   : 25.785711
+Pruning          : 0.04
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 45.377056 	 87.282402 	 89.686584
+Epoch 10 	 28.793318 	 27.467821 	 29.342833
+Epoch 20 	 27.286398 	 26.919506 	 28.523153
+Epoch 30 	 26.367697 	 25.625338 	 27.503656
+Epoch 40 	 25.966125 	 25.756582 	 27.642326
+Epoch 50 	 25.514675 	 25.492010 	 27.301617
+Epoch 60 	 24.656507 	 24.865818 	 26.727509
+Epoch 70 	 24.537027 	 24.721882 	 26.479534
+Epoch 80 	 24.254900 	 24.631025 	 26.450644
+Epoch 90 	 24.310448 	 24.835770 	 26.596323
+Epoch 100 	 23.741051 	 24.286413 	 26.177361
+Epoch 110 	 23.633394 	 24.328018 	 26.139744
+Epoch 120 	 23.565203 	 24.491430 	 26.211103
+[Model stopped early]
+Train loss       : 23.537233
+Best valid loss  : 24.268534
+Best test loss   : 26.217525
+Pruning          : 0.03
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 45.987762 	 62.067951 	 63.829422
+Epoch 10 	 29.457541 	 27.812071 	 29.706697
+Epoch 20 	 27.971550 	 27.307138 	 28.769873
+Epoch 30 	 26.898346 	 26.185482 	 28.010513
+Epoch 40 	 26.483974 	 26.013981 	 27.635971
+Epoch 50 	 26.307005 	 26.032221 	 27.748976
+Epoch 60 	 26.191677 	 25.646271 	 27.392460
+Epoch 70 	 26.013048 	 25.545088 	 27.229778
+Epoch 80 	 26.923508 	 26.187113 	 28.015255
+Epoch 90 	 26.180225 	 25.960608 	 27.711573
+[Model stopped early]
+Train loss       : 25.996733
+Best valid loss  : 25.204012
+Best test loss   : 27.143230
+Pruning          : 0.02
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 57.639244 	 1986.987305 	 1941.394165
+Epoch 10 	 32.861874 	 30.451687 	 32.446686
+Epoch 20 	 29.530016 	 28.593027 	 30.422483
+Epoch 30 	 28.727020 	 27.173191 	 29.179323
+Epoch 40 	 27.805189 	 26.813761 	 28.529436
+Epoch 50 	 27.196180 	 26.396053 	 28.116970
+Epoch 60 	 27.164873 	 26.343676 	 28.068211
+Epoch 70 	 26.590328 	 25.974482 	 27.738348
+Epoch 80 	 26.335985 	 26.091024 	 27.817076
+Epoch 90 	 25.499485 	 25.296684 	 27.284929
+Epoch 100 	 25.396128 	 25.641870 	 27.297142
+Epoch 110 	 24.934595 	 25.372700 	 27.037060
+Epoch 120 	 24.834181 	 25.301048 	 26.918783
+Epoch 130 	 24.659977 	 25.206730 	 26.878464
+Epoch 140 	 24.624292 	 25.136528 	 26.832432
+Epoch 150 	 24.625893 	 25.213125 	 26.860849
+Epoch 160 	 24.588179 	 25.158112 	 26.823395
+[Model stopped early]
+Train loss       : 24.613203
+Best valid loss  : 24.732210
+Best test loss   : 26.875696
+Pruning          : 0.01
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 48.154678 	 416.222015 	 426.246643
+Epoch 10 	 31.262491 	 29.441738 	 31.599838
+Epoch 20 	 29.604380 	 37.155666 	 38.758175
+Epoch 30 	 28.502880 	 31.969728 	 33.738953
+Epoch 40 	 28.015341 	 33.155430 	 34.704914
+Epoch 50 	 27.698484 	 27.409468 	 29.302410
+Epoch 60 	 27.165497 	 29.120831 	 30.888924
+Epoch 70 	 26.422491 	 28.631464 	 30.548466
+Epoch 80 	 25.941847 	 27.029232 	 28.810610
+Epoch 90 	 25.849386 	 26.450670 	 27.926762
+Epoch 100 	 25.777239 	 25.915194 	 27.518797
+Epoch 110 	 25.649359 	 26.602741 	 28.354269
+Epoch 120 	 25.524435 	 27.004471 	 28.517384
+Epoch 130 	 25.433540 	 26.531197 	 28.087774
+Epoch 140 	 25.412895 	 26.516180 	 28.001171
+Epoch 150 	 25.369972 	 31.373388 	 32.622890
+Epoch 160 	 25.315086 	 25.647322 	 27.354494
+Epoch 170 	 25.305771 	 26.051157 	 27.458307
+[Model stopped early]
+Train loss       : 25.338549
+Best valid loss  : 25.460022
+Best test loss   : 27.353098
+Pruning          : 0.01
+0.001
+0.001
+[Current model size]
+================================
+Total params      : 4,590,296
+--------------------------------
+Total memory      : 42.47 MB
+Total Flops       : 622.77 MFlops
+Total Mem (Read)  : 44.86 MB
+Total Mem (Write) : 35.63 MB
+[Supermasks testing]
+[Untrained loss : nan]
+[Starting training]
+Epoch 0 	 53.629848 	 nan 	 nan
+Epoch 10 	 33.992569 	 50.567184 	 51.491676
+Epoch 20 	 31.730301 	 46.796318 	 48.985157
+Epoch 30 	 30.226109 	 29.991154 	 31.764355
+Epoch 40 	 29.757259 	 29.292500 	 30.918970
+Epoch 50 	 29.237688 	 28.601713 	 30.371641
+Epoch 60 	 28.911386 	 34.010368 	 35.886356
+Epoch 70 	 28.315140 	 28.924992 	 30.634882
+Epoch 80 	 28.109741 	 29.889133 	 31.478462
+Epoch 90 	 27.977619 	 31.553003 	 33.118565
+Epoch 100 	 27.698866 	 28.074701 	 29.645344
+Epoch 110 	 27.539738 	 32.082592 	 33.893764
+Epoch 120 	 27.555153 	 32.096474 	 33.735313
+Epoch 130 	 27.442432 	 32.823090 	 34.332523
+Epoch 140 	 27.357038 	 29.467407 	 31.073286
+Epoch 150 	 27.335100 	 27.391403 	 29.057440
+Epoch 160 	 27.289673 	 27.868355 	 29.379135
+[Model stopped early]
+Train loss       : 27.371727
+Best valid loss  : 27.043257
+Best test loss   : 29.094530
+Pruning          : 0.01
